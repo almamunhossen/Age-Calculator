@@ -1,0 +1,104 @@
+:root {
+    --bodyColor: #1a1a1a;
+    --divBgColor: #323232;
+    --borderColor: #1a1a1a;
+    --liteClor: #cccccc;
+    --drckColor: #535454;
+}
+
+* {
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--bodyColor);
+    color: var(--liteClor);
+}
+
+.container {
+    background-color: var(--divBgColor);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1.5px solid var(--borderColor);
+}
+
+#dateInput::-webkit-calendar-picker-indicator {
+    color: var(--liteClor);
+}
+
+input,
+button {
+    margin-bottom: 7px;
+    padding: 15px;
+    font-size: 17px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--borderColor);
+    cursor: pointer;
+}
+
+input#dateInput {
+    background-color: var(--divBgColor);
+    color: var(--liteClor);
+    margin-top: 10px;
+}
+
+input:focus {
+    background-color: var(--bodyColor);
+    color: var(--liteClor);
+}
+
+#result,
+#timePassed {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    background: var(--bodyColor);
+    padding: 7px;
+    color: var(--liteClor);
+    border-radius: 9px;
+    border: 1px solid var(--borderColor);
+}
+
+#result {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+#timePassed ul {
+    list-style-type: none;
+    padding-left: 80px;
+}
+
+#timePassed li {
+    margin-bottom: 5px;
+}
+
+.btn {
+    background-color: var(--bodyColor);
+    font-size: 17px;
+    color: var(--liteClor);
+    transition: .5s;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: var(--divBgColor);
+}
+
+hr {
+    border: 0.5px solid var(--bodyColor);
+}
